@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/homeJobListFragment">
+    <fragment
+        android:id="@+id/assignmentFragment"
+        android:name="com.example.jikgong.view.main.ass.AssignmentFragment"
+        android:label="fragment_assignment"
+        tools:layout="@layout/fragment_assignment" />
+    <fragment
+        android:id="@+id/myInfoFragment"
+        android:name="com.example.jikgong.view.main.myinfo.MyInfoFragment"
+        android:label="fragment_my_info"
+        tools:layout="@layout/fragment_my_info" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.jikgong.view.main.pay.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" />
+    <fragment
+        android:id="@+id/homeJobListFragment"
+        android:name="com.example.jikgong.view.main.home.HomeJobListFragment"
+        android:label="fragment_home_joblist"
+        tools:layout="@layout/fragment_home_joblist" />
+</navigation>
