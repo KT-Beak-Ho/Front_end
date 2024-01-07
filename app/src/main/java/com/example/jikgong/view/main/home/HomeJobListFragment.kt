@@ -20,6 +20,7 @@ class HomeJobListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        // 프래그 먼트 내부에서 프래그먼트 전환하기
         binding = FragmentHomeJoblistBinding.inflate(inflater,container,false)
         binding.test.setOnClickListener {
             val currentFragment = parentFragmentManager.findFragmentById(R.id.frame_layout)
@@ -33,9 +34,6 @@ class HomeJobListFragment : Fragment() {
                 fragmentTransaction.replace(R.id.frame_layout,HomeJobListFragment())
                 fragmentTransaction.commit()
             }
-
-
-
         }
         return binding.root
     }
