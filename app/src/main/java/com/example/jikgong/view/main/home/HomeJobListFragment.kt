@@ -24,7 +24,7 @@ class HomeJobListFragment : Fragment() {
         binding = FragmentHomeJoblistBinding.inflate(inflater,container,false)
         binding.test.setOnClickListener {
             val currentFragment = parentFragmentManager.findFragmentById(R.id.frame_layout)
-            if(currentFragment?.javaClass?.simpleName == "HomeJobListFragment") {
+            if(currentFragment == null || currentFragment?.javaClass?.simpleName == "HomeJobListFragment") {
                 val fragmentTransaction = parentFragmentManager.beginTransaction()
                 fragmentTransaction.replace(R.id.frame_layout,HomeMapFragment())
                 fragmentTransaction.commit()

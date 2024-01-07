@@ -7,13 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".view.main.home.HomeJobListFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="0dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+
         android:background="#FFFF00">
 
         <androidx.constraintlayout.widget.ConstraintLayout
