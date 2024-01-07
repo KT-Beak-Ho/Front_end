@@ -1,4 +1,4 @@
-package com.example.jikgong.view.main
+package com.example.jikgong.view.main.myinfo
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.main.myinfo.MyInfoFragment">
+    tools:context=".view.main.home.HomeMapFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="내정보" />
+        android:text="Home Map Page" />
 
 </FrameLayout>
