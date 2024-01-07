@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import com.example.jikgong.R
 
 class HomeMapFragment : Fragment() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {

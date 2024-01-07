@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.jikgong.R
+import com.example.jikgong.databinding.FragmentHomeJoblistBinding
 
 class HomeJobListFragment : Fragment() {
+    private lateinit var binding: FragmentHomeJoblistBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {}
@@ -18,7 +20,16 @@ class HomeJobListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_joblist, container, false)
+        binding = FragmentHomeJoblistBinding.inflate(inflater,container,false)
+        binding.test.setOnClickListener {
+            val fragmentTransaction = parentFragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.frame_layout,HomeMapFragment())
+            fragmentTransaction.commit()
+
+
+        }
+        return binding.root
     }
 
 }
+
