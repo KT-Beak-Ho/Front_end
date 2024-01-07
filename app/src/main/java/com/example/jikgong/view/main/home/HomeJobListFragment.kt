@@ -22,6 +22,8 @@ class HomeJobListFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentHomeJoblistBinding.inflate(inflater,container,false)
         binding.test.setOnClickListener {
+            val currentFragment = parentFragmentManager.findFragmentById(R.id.frame_layout)
+            
             val fragmentTransaction = parentFragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.frame_layout,HomeMapFragment())
             fragmentTransaction.commit()
